@@ -55,10 +55,11 @@
     <div class="container">
         <h1>Contact Information</h1>
         <div class="contact-info">
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Phone:</strong> +1234567890</p>
-            <p><strong>Email:</strong> john.doe@example.com</p>
-            <p><strong>Company:</strong> Example Inc.</p>
+            <p><strong>Name:</strong> 齐泽众</p>
+            <p><strong>Phone:</strong> 15711417470</p>
+            <p><strong>Email:</strong> george.qi@pleasantteches.com</p>
+            <p><strong>Company:</strong> 北京愉佚科技发展有限公司</p>
+            <p><strong>Address:</strong> 北京市延庆区中关村延庆园长城路2号楼E座387室</p>
         </div>
         <a href="javascript:void(0);" class="add-to-contacts" onclick="addToContacts()">Add to Contacts</a>
     </div>
@@ -66,19 +67,21 @@
     <script>
         function addToContacts() {
             // Define the contact information
-            const name = "John Doe";
-            const phone = "+1234567890";
-            const email = "john.doe@example.com";
-            const company = "Example Inc.";
+            const name = "齐泽众";
+            const phone = "15711417470";
+            const email = "george.qi@pleasantteches.com";
+            const company = "北京愉佚科技发展有限公司";
+            const address = "北京市延庆区中关村延庆园长城路2号楼E座387室";
 
             // Create a vCard string
             const vCard = `BEGIN:VCARD
 VERSION:3.0
-N:${name}
+N:齐泽众;;
 FN:${name}
 ORG:${company}
 TEL;TYPE=CELL:${phone}
-EMAIL:${email}
+EMAIL;TYPE=INTERNET:${email}
+ADR;TYPE=WORK:;;${address};北京;中国
 END:VCARD`;
 
             // Encode the vCard string
